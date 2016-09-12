@@ -1,0 +1,538 @@
+body{
+    font:16px "Lato",sans-serif;
+    margin: 0;
+    font-size: 62.5%;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,ul{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+a{
+  text-decoration: none;
+}
+button,input{
+    display: inline-block;
+    border:0;
+}
+
+/*/////////////////////  FIN DE LA NORMALIZE PERSO  /////////////////////////*/
+/*/////////////////////// PARALLAX ////////////////////////////////////////////*/
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+  display:table-cell;
+  position:relative;
+  vertical-align:middle;
+  text-align:center;
+  padding-top: 10em;
+  padding-bottom: 15em;
+}
+sec
+.not-fullscreen {
+    height:50%;
+}
+/*/////////////////////////// MENU /////////////////////////////////////////////////////////////*/
+.menu{
+  width: 100%;
+  position: fixed;
+  text-align: center;    
+  background: rgba(13,13,13,0.8);
+  z-index: 3;
+}
+.menu ul{
+  position: relative;
+  line-height: 6em;
+  padding: 0;
+  text-align: center;
+  /*vertical-align: top;*/
+
+}
+.menu li{
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inline-block;
+  /*transition-duration: 1s;*/
+  cursor: pointer;
+
+}
+.menu a{
+  padding: 1em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 1.6em;
+  /*transition-duration: 0.5s;*/
+  color: #ccc;
+}
+.menu i{
+    font-size: 1.2em;
+    color: #ccc;
+}
+.selected{
+   border-bottom: 0.15em solid #418FCD;
+   /*font-style: bold;*/
+   /*border-right: 0.3em solid #50c1e9;*/
+}
+.menu a:hover{ 
+  color: #418FCD;
+  }
+.menuMobile{
+  display: none;
+}
+.menuDs{
+  /*display: block;*/
+}
+.navbar-nav{
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+.menu ul{  
+  font-size: 2em;
+  text-align: left;
+}
+.menu li{
+  display: block;
+  line-height: 1em;
+  margin: 0;
+}
+.menuDs{
+  display: none;
+}
+.menuMobile{
+  display: block;
+}
+.menu a{
+  font-size: 0.6em;
+  padding: 0.1em; 
+}
+.menu i{
+  padding: 0.4em;
+}
+}
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+.menu ul{
+  font-size: 0.9em;
+  font-weight: 400;
+}
+  .menu li{
+  margin:0;
+  }
+}
+
+p{
+  font-size: 1.6em;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////// TITRE ///////////////////////////////////////////////*/
+#intro{
+  background-color: rgba(23,21,24,0.3);
+
+}
+#intro h1{
+  font-size: 6em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  letter-spacing: .15em;
+  word-spacing: .1em;
+}
+#intro h2{
+  font-size: 2.5em;
+  font-weight: 400;
+    letter-spacing: .15em;
+}
+.titre{
+  color: #fff;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+p{
+  color: #7F7575;
+}
+
+.btnScrollDown{
+  margin-top: 5em;
+  /*position: relative;*/
+  display: inline-block;
+  /*height: 2em;*/
+  width: 16em;
+  padding: 0;
+  line-height: 4em;
+  font-size: 2em;
+  /*border: solid 0.1em #fff;*/
+  border-radius: 8em;
+  background-color: rgba(204,204,204,0.8);
+ transition-duration: .4s;
+
+}
+.btnScrollDown:hover{
+  background-color: #ccc;
+   box-shadow: 0 0 30px #ccc;
+}
+.btnScrollDown a{
+  font-weight: 700;
+  font-size: 1.3em;
+  display: block;
+  text-decoration: none;
+  color: #000;
+
+}
+.btnScrollDown i{
+    margin-left: 1em;  
+    font-size: 2em;
+    vertical-align: middle;
+}
+#presentation .subtitle{
+  margin-bottom: 4em;
+}
+.section-header h2{
+  font-size: 4em;
+  font-weight: 700;
+  color: #555555;
+  font-weight: 700;
+}
+.section-header h3{
+
+}
+.subtitle{
+  text-transform: uppercase;
+  color: #7F7575;
+  font-weight: 900;
+  font-size: 1.7em;  
+  margin-bottom: 8em;
+}
+.textSize{
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.letterSpacing{
+  letter-spacing: .1em;
+  word-spacing: .5em;
+}
+.spacer{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: inline-block;
+    width: 12em;
+    height: .3em;
+    background-color: rgba(65,143,205,1);
+}
+/*/////////////////////////// PRESENTATION ////////////////////////////////////////////////*/
+/*/////////////////////////// PRESENTATION ////////////////////////////////////////////////*/
+/*/////////////////////////// PRESENTATION ////////////////////////////////////////////////*/
+.resumeDiv{
+background-color: #F7F7F7;
+}
+.resumeContent{
+  width: 120em;
+  margin: 0 auto;
+}
+.resumeContent img{
+  opacity: 0.8;
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding: 0.8em;
+  box-shadow: 0 0 10px #7F7575;
+}
+.resumeContent p{
+  text-align: left;
+  padding-left: 5em;
+  display: inline-block;
+  width: 74%;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 1279px) {
+  .resumeContent{
+  width: 95%;
+} 
+.resumeContent p{
+  /*margin-right: 2em;*/
+}
+}
+@media only screen and (max-width: 767px) {
+.resumeContent img{
+  width: 50%;
+    margin: 0 auto;
+
+}
+.resumeContent p{
+  width: 70%;
+    padding: 0;
+  margin-top: 2em;
+}
+}
+/*///////////////////// POINTS FORTS: //////////////////////////////;*/
+/*///////////////////// POINTS FORTS: //////////////////////////////;*/
+/*///////////////////// POINTS FORTS: //////////////////////////////;*/
+.qualitiesDiv{
+  background-color: rgba(247,247,247,0.8);
+  
+}
+.qualities{
+  width: 80%;
+  margin: 0 auto;
+}
+.qualities li {
+  float: left;
+  display: block;
+  width: 24%;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.qualities h2{
+    color: #555555;
+    font-size: 5em;
+}
+.qualities .subtitle{
+  /*color: #418FCD;*/
+  color: rgba(65,143,205,1);
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+@media only screen and (max-width: 1100px) {
+.qualities li{
+  width: 100%;
+  margin-top: 6em;
+}
+}
+.cd-timeline-content{
+
+}
+
+/*/////////////////////// SKILLS: ///////////////////////////////////////////////;*/
+/*/////////////////////// SKILLS: ///////////////////////////////////////////////;*/
+/*/////////////////////// SKILLS: ///////////////////////////////////////////////;*/
+.skillContainer{
+    background-color: rgba(247,247,247,0.8);
+    /*background-color: red;*/
+}
+.skillDiv { 
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.skillDiv div.subtitle{
+  margin-top: 1.5em;
+  font-size: 2em;
+}
+.skillDiv h3{
+  margin-bottom: 3em;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  /*color: #757575;*/
+  font-size: 1em;
+  font-weight: 100; 
+}
+@media only screen and (max-width: 480px) { 
+.chart{
+  display:block;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) { 
+.skillDiv{
+  width: 481px;
+  margin: 0 auto;
+}
+.chart{
+  display:block;
+  float: left;
+  margin-left: 45px;
+    margin-right: 45px;
+}
+.chart2{
+  clear: both;
+}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1280px) { 
+  .skillDiv{
+    width: 641px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .chart{
+    margin-left: 31px;
+    margin-right: 31px;
+  display: block;
+  float: left;
+  }
+  .chart3{
+  clear: both;
+}
+}
+@media only screen and (min-width: 1280px) and (max-width: 1650px){ 
+    .chart{
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+}
+.chart canvas{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;  
+}
+.percent {
+  color: #7F7575;
+  display: inline-block;
+  line-height: 150px;
+  z-index: 2;
+  font-size: 3em;
+  font-weight: 500;
+}
+.percent:after {
+  content: '%';
+}
+.skillText{
+  margin-top: 20px;
+  color: #f2f2f2;
+  font-size: 2em;
+  font-weight: 500;
+   letter-spacing: 2px;
+}
+/*//////////////////////////////////// CONTACT ///////////////////////////////////*/
+/*//////////////////////////////////// CONTACT ///////////////////////////////////*/
+/*//////////////////////////////////// CONTACT ///////////////////////////////////*/
+.contactDiv{
+  background-color: rgba(247,247,247,0.8);
+}
+form{
+    width: 90em;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+form label, form input{
+    font-size: 2em;
+    display:block;
+    width: 20em;
+    text-align: left;
+    line-height:2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.name{
+    float: left;
+}
+.email{
+    float: right;
+}
+form label{
+  color: #7F7575;
+  font-weight: 700;
+  font-size: 2em;
+}
+form span{
+    color: #418FCD;
+    font-size: 1.3em;
+}
+form input{
+    background-color: rgba(50,50,50,0.9);
+    border-radius: .3em;
+    color: #ccc;
+}
+textarea{
+    color: #ccc;
+    border-radius: .3em;
+    background-color:rgba(50,50,50,0.9);
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    height: 15em;
+    line-height:3em;
+    border: none;
+    resize: none;
+}
+#btnInscr{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    width: 13em;
+    line-height: 3em;
+    
+    border-radius: .2em;
+    transition-duration: 0.5s;
+    color: #fff;
+    background-color: #418FCD;
+    cursor: pointer;
+}
+#btnInscr:hover{
+    background-color: #67AEE5;
+}
+@media only screen and (max-width: 950px){ 
+  form{
+    width: 95%;
+  }
+  form label, form input{
+  width: 100%;
+}
+  .name{
+    float: none;
+}
+.email{
+    float: none;
+}
+}
+/*/////////////////////  ERREURS FORMULAIRE  /////////////////////////////////////////*/
+.error, .succes{
+    background-color: #e57373;
+    color: #000;
+    border-radius: .3em;
+    line-height: 3em;   
+    font-size: 1.1em; 
+}
+.succes{
+    background-color:#81c784; 
+}
+#errorNom, #errorMail, #mailInvalide, #errorMsg, #succes{
+    display: none;
+}

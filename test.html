@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Materialize Test</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	
+</head>
+
+<body>
+	<div class="row">
+    <div class="col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="structure" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="initialization" class="section scrollspy">
+        <p>Content </p>
+      </div>
+    </div>
+    <div class="menu col hide-on-small-only">
+    
+    	  <ul class="table-of-contents">
+        <li><a class="" href="#introduction">Introduction</a></li>
+        <li><a class="" href="#structure">Structure</a></li>
+        <li><a class="" href="#initialization">Intialization</a></li>
+      </ul>
+    
+    
+    </div>
+  </div>
+        
+</body>
+<style scoped>
+	.section{
+		height: 500px;
+	}
+	.menu{
+		position: fixed;
+		top:20px;
+		right: 50px;
+	}	
+</style>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script>
+	  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+</script>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+<nav id="navbar" class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" aria-expanded="true" data-target="#bs-example-navbar-collapse-6" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#introduction">Brand</a>
+    </div>
+    <div id="bs-example-navbar-collapse-6" class="navbar-collapse collapse in" aria-expanded="true" style="">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="#introduction">Home</a>
+        </li>
+        <li>
+          <a href="#structure">Link</a>
+        </li>
+        <li>
+          <a href="#initialization">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div id="introduction" class="section scrollspy container-fluid">
+        <p>Content 1</p>
+      </div>
+
+      <div id="structure" class="section scrollspy">
+        <p>Content 2</p>
+      </div>
+
+      <div id="initialization" class="section scrollspy">
+        <p>Content 3</p>
+      </div>        
+</body>
+<style scoped>
+
+.section{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px;
+}
+nav.navbar{
+  padding-left: 80px;
+  padding-right:80px;
+  border: none;
+  background: #fff;
+  margin-bottom: 0;
+}
+	.section{
+		height: 500px;
+	}
+  #introduction{
+    background: #ccc;
+    /*padding-top: 50px;*/
+  }
+   #structure{
+    background: #fff;
+  }
+   #initialization{
+    background: #222;
+  }
+	
+  .row{
+    font-size: 6em;
+  }
+  .row1{
+    background-color: #ccc;
+  }
+    .row2{
+    background-color: #222;
+  }
+    .row3{
+    background-color: #333;
+  }
+    .row4{
+    background-color: #444;
+  }
+</style>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: "#navbar"});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#navbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+</html>
