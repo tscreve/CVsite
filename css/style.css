@@ -180,38 +180,19 @@ p{
 p{
   color: #7F7575;
 }
-
 .btnScrollDown{
-  margin-top: 5em;
-  /*position: relative;*/
-  display: inline-block;
-  /*height: 2em;*/
-  width: 16em;
-  padding: 0;
-  line-height: 4em;
-  font-size: 2em;
-  /*border: solid 0.1em #fff;*/
-  border-radius: 8em;
-  background-color: rgba(204,204,204,0.8);
- transition-duration: .4s;
-
+  margin-top: 8em;
 }
-.btnScrollDown:hover{
-  background-color: #ccc;
-   box-shadow: 0 0 30px #ccc;
-}
-.btnScrollDown a{
-  font-weight: 700;
-  font-size: 1.3em;
-  display: block;
-  text-decoration: none;
-  color: #000;
-
+.btnScrollDown i:hover{
+   box-shadow: 0 0 50px #ccc;
 }
 .btnScrollDown i{
-    margin-left: 1em;  
-    font-size: 2em;
-    vertical-align: middle;
+  background-color: black;
+  line-height: 0.85em;
+  font-size: 8em;
+  color:#ccc;
+  border-radius: 50%;
+  transition-duration: .4s;
 }
 #presentation .subtitle{
   margin-bottom: 4em;
@@ -260,7 +241,9 @@ background-color: #F7F7F7;
   margin: 0 auto;
 }
 .resumeContent img{
-  opacity: 0.8;
+  opacity: 0.95;
+
+  color: red;
   display: inline-block;
   width: 25%;
   vertical-align: middle;

@@ -16,7 +16,7 @@ offset = 0.8;
     });
 
     $('.menuMobile').click(function(e){
-        $('.menuDs').toggle();
+        $('.navbar-nav>li').toggle();
         e.stopPropagation();
     }); 
 
