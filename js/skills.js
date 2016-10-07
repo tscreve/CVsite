@@ -16,7 +16,7 @@ offset = 0.8;
     });
 
     $('.menuMobile').click(function(e){
-        $('.navbar-nav>li').toggle();
+        $('.menuDs').toggle();
         e.stopPropagation();
     }); 
 
@@ -29,7 +29,7 @@ offset = 0.8;
 
     function textReplace(){
         var text=$(".Title");
-        var alltext=["Apprendre le html5","Apprendre la css","Apprendre Javascript"];
+        var alltext=["Dessinateur Projeteur","Développeur Intégrateur Web","Directeur de magasin"];
         var i=0;
         // console.log(alltext[i]);
         setInterval(function(){
@@ -43,7 +43,7 @@ offset = 0.8;
                 i=0;
             }
             // console.log(i);
-        },2000,text,alltext,i);
+        },3000,text,alltext,i);
     }
     textReplace();
 
@@ -164,10 +164,11 @@ offset = 0.8;
             // si pas d'erreur
             if(error<1){        
                 // alert message envoyé     
-                succes.style.display="block";                                       
+                // succes.style.display="block";  
+
             }
             else{
-                succes.style.display="none";
+                // succes.style.display="none";
             }
         }
     btn.addEventListener('click',controlForm,false);

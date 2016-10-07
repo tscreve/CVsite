@@ -210,11 +210,11 @@ Main components
 }
 .cd-timeline-content h2 {
   color: #555555;
-  font-size: 2em;
-   font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -272,7 +272,7 @@ Main components
   }
   .cd-timeline-content .cd-date {
     position: absolute;
-    width: 99px;
+    width: 160px;
     left: 115%;
     top: -0.5em;
     line-height: 2em;
