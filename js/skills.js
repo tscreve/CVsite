@@ -6,7 +6,7 @@ var id=false;
 
 var timelineBlocks = $('.cd-timeline-block'),
 offset = 0.8;
-
+    
     $('.btnScrollDown a, .navbar-nav a').click(function(e){
         e.preventDefault();
         $('html, body').animate({

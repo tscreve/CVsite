@@ -339,19 +339,8 @@ background-color: #F7F7F7;
 .btn{
   width: 100%;
 }
-#gitbtn{
-  /*font-size: 2.5em;*/
-  cursor: pointer;
-  margin-top: 3em;
-  width: 5em;
-  height: 5em;
-  background-color: #fff ;
-  border-radius: 50%;
-}
-#gitbtn i{
-  font-size: 6em;
-  color: #418FCD;
-}
+
+
 .chart {
   position: relative;
   display: inline-block;
@@ -491,21 +480,26 @@ textarea{
     border: none;
     resize: none;
 }
-#btnInscr{
+.btnN{
     font-size: 2.5em;
     text-align: center;
     margin: 0 auto;
     margin-top: 1.5em;
     width: 13em;
-    line-height: 3em;
-    
+    line-height: 3em;    
     border-radius: .2em;
     transition-duration: 0.5s;
     color: #fff;
     background-color: #418FCD;
     cursor: pointer;
 }
-#btnInscr:hover{
+.btnGit{
+  font-size:  1.5em;
+}
+.btnGit i{
+  /*display: none;*/
+}
+.btnN:hover{
     background-color: #67AEE5;
 }
 @media only screen and (max-width: 950px){ 
