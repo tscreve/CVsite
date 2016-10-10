@@ -113,35 +113,35 @@ offset = 0.8;
 
     var btn=document.querySelector('#btnInscr');    
         function controlForm(){
-            var mail=document.querySelector("#email").value;
+            // var mail=document.querySelector("#email").value;
             var nom=document.querySelector("#nom").value;
             var msg=document.querySelector("#msg").value;
             
             var errorNom=document.querySelector("#errorNom");
-            var errorMail=document.querySelector("#errorMail");
-            var mailInvalide=document.querySelector("#mailInvalide");
+            // var errorMail=document.querySelector("#errorMail");
+            // var mailInvalide=document.querySelector("#mailInvalide");
             var errorMsg=document.querySelector("#errorMsg");
             var error=0;
-            var succes=document.querySelector("#succes");
+            // var succes=document.querySelector("#succes");
             
 
 
             /*condition*/
             // si champ mail vide
-            if(!mail){
-                errorMail.style.display="block";                
-                error+=1;
-            }
-            // si format mail invalide
-            else if(!/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/.test(mail)){
-                errorMail.style.display="none";
-                mailInvalide.style.display="block";
-                error+=1;
-            }
-            else{
-                errorMail.style.display="none";
-                mailInvalide.style.display="none";
-            }
+            // if(!mail){
+            //     errorMail.style.display="block";                
+            //     error+=1;
+            // }
+            // // si format mail invalide
+            // else if(!/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/.test(mail)){
+            //     errorMail.style.display="none";
+            //     mailInvalide.style.display="block";
+            //     error+=1;
+            // }
+            // else{
+            //     errorMail.style.display="none";
+            //     mailInvalide.style.display="none";
+            // }
             // si champ nom vide
             if(!nom){
                 errorNom.style.display="block";
@@ -165,7 +165,12 @@ offset = 0.8;
             if(error<1){        
                 // alert message envoyé     
                 // succes.style.display="block";  
-
+               
+                $(location).attr('href', 'mailto:contact@tom75.fr?subject='
+                             + encodeURIComponent(nom)
+                             + "&body=" 
+                             + encodeURIComponent(msg)
+                );
             }
             else{
                 // succes.style.display="none";
