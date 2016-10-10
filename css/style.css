@@ -355,6 +355,13 @@ background-color: #F7F7F7;
   font-size: 1em;
   font-weight: 100; 
 }
+.chart canvas{
+position: absolute;
+top: 0;
+left: 0;
+width: 150px !important;
+height: 150px !important;  
+}
 @media only screen and (max-width: 480px) { 
 .chart{
   display:block;
@@ -377,7 +384,6 @@ background-color: #F7F7F7;
   clear: both;
 }
 }
-
 @media only screen and (min-width: 641px) and (max-width: 1280px) { 
   .skillDiv{
     width: 641px;
@@ -394,18 +400,11 @@ background-color: #F7F7F7;
   clear: both;
 }
 }
-@media only screen and (min-width: 1280px) and (max-width: 1650px){ 
+@media only screen and (min-width: 1281px) and (max-width: 1650px){ 
     .chart{
     margin-left: 31px;
     margin-right: 31px;
   }
-}
-.chart canvas{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;  
 }
 .percent {
   color: #7F7575;
@@ -413,7 +412,7 @@ height: 100%;
   line-height: 150px;
   z-index: 2;
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 400;
 }
 .percent:after {
   content: '%';
@@ -422,7 +421,7 @@ height: 100%;
   margin-top: 20px;
   color: #f2f2f2;
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 400;
    letter-spacing: 2px;
 }
 /*//////////////////////////////////// CONTACT ///////////////////////////////////*/
