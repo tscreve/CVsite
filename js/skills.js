@@ -29,7 +29,7 @@ offset = 0.8;
 
     function textReplace(){
         var text=$(".Title");
-        var alltext=["Dessinateur Projeteur","Développeur Intégrateur Web","Directeur de magasin"];
+        var alltext=["Développeur Intégrateur Web","Dessinateur Projeteur","Directeur de magasin"];
         var i=0;
         // console.log(alltext[i]);
         setInterval(function(){

@@ -181,20 +181,7 @@ p{
 p{
   color: #7F7575;
 }
-.btnScrollDown{
-  margin-top: 8em;
-}
-.btnScrollDown i:hover{
-   box-shadow: 0 0 50px #ccc;
-}
-.btnScrollDown i{
-  background-color: black;
-  line-height: 0.85em;
-  font-size: 8em;
-  color:#ccc;
-  border-radius: 50%;
-  transition-duration: .4s;
-}
+
 #presentation .subtitle{
   margin-bottom: 4em;
 }
@@ -483,8 +470,7 @@ textarea{
     font-size: 2.5em;
     text-align: center;
     margin: 0 auto;
-    margin-top: 1.5em;
-    width: 13em;
+    width: 14em;
     line-height: 3em;    
     border-radius: .2em;
     transition-duration: 0.5s;
@@ -492,11 +478,36 @@ textarea{
     background-color: #418FCD;
     cursor: pointer;
 }
+.btnScrollDown{
+  width: 10em;
+  margin-top: 5em;
+  line-height: 2.5em;
+}
+.btnScrollDown a{
+  display: block;
+  color: #fff;
+}
+.btnScrollDown i:hover{
+   box-shadow: 0 0 50px #ccc;
+}
+.btnScrollDown i{
+margin-left: 0.5em;
+}
 .btnGit{
   font-size:  1.5em;
 }
 .btnGit i{
+  font-size: 1.5em;
+  vertical-align: middle;
   /*display: none;*/
+}
+#btnInscr{
+  margin-top: 1.5em;
+  width: 9em;
+    line-height: 2.5em;
+}
+#btnInscr i{
+  margin-left: 0.5em;
 }
 .btnN:hover{
     background-color: #67AEE5;
@@ -518,10 +529,10 @@ textarea{
 /*/////////////////////  ERREURS FORMULAIRE  /////////////////////////////////////////*/
 .error, .succes{
     background-color: #e57373;
-    color: #000;
+    color: #fff;
     border-radius: .3em;
-    line-height: 3em;   
-    font-size: 1.1em; 
+    line-height: 2em;   
+    font-size: 1.3em; 
 }
 .succes{
     background-color:#81c784; 
