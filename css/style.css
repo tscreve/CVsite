@@ -158,7 +158,7 @@ p{
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////// TITRE ///////////////////////////////////////////////*/
 #intro{
-  background-color: rgba(23,21,24,0.5);
+  background-color: rgba(23,21,24,0.35);
 
 }
 #intro h1{
@@ -415,7 +415,11 @@ height: 150px !important;
 /*//////////////////////////////////// CONTACT ///////////////////////////////////*/
 /*//////////////////////////////////// CONTACT ///////////////////////////////////*/
 .contactDiv{
+
   background-color: rgba(247,247,247,0.8);
+}
+.titreContact{
+  margin-bottom: 4em;
 }
 form{
     width: 90em;
@@ -427,7 +431,7 @@ form{
 form label, form input{
     font-size: 2em;
     display:block;
-    width: 20em;
+    width: 45em;
     text-align: left;
     line-height:2.5em;
     padding-left: 1em;
@@ -438,6 +442,9 @@ form label, form input{
 }
 .email{
     float: right;
+}
+#nom{
+  margin-bottom: 1.5em;
 }
 form label{
   color: #7F7575;
@@ -458,11 +465,9 @@ textarea{
     border-radius: .3em;
     background-color:rgba(50,50,50,0.9);
     font-size: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     width: 100%;
-    height: 15em;
-    line-height:3em;
+    height: 10em;
     border: none;
     resize: none;
 }
