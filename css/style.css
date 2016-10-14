@@ -176,7 +176,14 @@ p{
 .titre{
   color: #fff;
 }
-
+@media only screen and (max-width: 640px) {
+#intro h1{
+  font-size: 4em;
+}
+#intro h2{
+  font-size: 1.5em;
+}
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 p{
   color: #7F7575;
@@ -501,10 +508,24 @@ margin-left: 0.5em;
 .btnGit{
   font-size:  1.5em;
 }
-.btnGit i{
+.btnGit i, #btnProj i{
   font-size: 1.5em;
   vertical-align: middle;
-  /*display: none;*/
+}
+#btnProj{
+  font-size:  1.5em;
+  background-color: #EC971F;
+  margin-left: 4em;
+}
+@media only screen and (max-width: 640px){
+#btnProj{
+    margin-left: 0;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+}
+#btnProj:hover{
+  background-color: #E8B671;
 }
 #btnInscr{
   margin-top: 1.5em;
