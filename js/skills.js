@@ -166,7 +166,7 @@ offset = 0.8;
                 // alert message envoyé     
                 // succes.style.display="block";  
                
-                $(location).attr('href', 'mailto:contact@tom75.fr?subject='
+                $(location).attr('href', 'mailto:tscreve@hotmail.com?subject='
                              + encodeURIComponent(nom)
                              + "&body=" 
                              + encodeURIComponent(msg)
